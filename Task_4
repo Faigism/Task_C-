@@ -1,0 +1,28 @@
+using System;
+
+namespace Task_4_
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] numbers = { 21, 32, 43, 112, 23, 971, 2, 34 };
+            int count = 0;
+            for (int i = 0; i < numbers.Length; i++)
+                if (numbers[i] > 99 && numbers[i] < 1000)
+                {
+                    Console.WriteLine("3 reqemli eded var");
+                    break;
+                }
+                else
+                {
+                    count++;
+                }
+            if (count==numbers.Length)
+            {
+                Console.WriteLine("3 reqemli eded yoxdur");
+            }
+           
+        }
+    }
+}
